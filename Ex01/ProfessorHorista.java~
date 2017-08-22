@@ -1,0 +1,29 @@
+import java.lang.Double;
+public class ProfessorHorista extends Professor{
+	private int total_horas;
+	private String salario_hora;
+	public ProfessorHorista(){
+		super();
+		total_horas=0;
+		salario_hora="";
+	}
+	public ProfessorHorista(String nome, String matricula, int idade, int total_horas, String salario_hora){
+		super(nome, matricula, idade);
+		this.total_horas=total_horas;
+		this.salario_hora=salario_hora;
+	}
+	
+	public int getTotalHoras(){
+		return total_horas;
+	}
+	public String getSalarioHora(){
+		return salario_hora;
+	}
+	public double getSalario(){
+		return total_horas*Double.parseDouble(salario_hora);
+	}
+	public void print(){
+		printStandard();
+		System.out.println("Salario: "+getSalario());
+	}
+}

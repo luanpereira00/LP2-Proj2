@@ -1,0 +1,23 @@
+public class Main{
+	public static void main(String[] args){
+		System.out.println();
+		ProfessorHorista professorHorista = new ProfessorHorista("Joao", "1234", 45, 10, "0");
+		professorHorista.print();
+		System.out.println();
+		Professor professor = new Professor("Joao", "1234", 45);
+		professor.print();
+		System.out.println();
+		ProfessorRegime professorRegime = new ProfessorRegime("Joao", "1234", 45, 10);
+		professorRegime.print();
+		
+		System.out.println();
+		ProfessorHorista professorHorista2 = new ProfessorHorista();
+		professorHorista2.print();
+		System.out.println();
+		Professor professor2 = new Professor();
+		professor2.print();
+		System.out.println();
+		ProfessorRegime professorRegime2 = new ProfessorRegime();
+		professorRegime2.print();
+	}
+}
