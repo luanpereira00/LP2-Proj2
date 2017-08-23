@@ -26,13 +26,14 @@ public class ProdutoDuravel extends Produto{
 	public String getDurabilidade(){
 		return durabilidade;
 	}
-	public void print(){
-		System.out.println("Nome: "+nome);
-		System.out.println("Preco: "+preco);
-		System.out.println("Marca: "+marca);
-		System.out.println("Descricacao: "+descricao);
-		System.out.println("Data de fabricacao: "+dataDeFabricacao);
+	
+	protected void printProdutoDuravel(){
+		printProduto();
 		System.out.println("Material Predominante: "+materialPredominante);
 		System.out.println("Durabilidade: "+durabilidade);
+	}
+	
+	public void print(){
+		printProdutoDuravel();
 	}
 }

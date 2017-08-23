@@ -54,11 +54,15 @@ public class Produto{
 		this.dataDeFabricacao=dataDeFabricacao;
 	}
 	
-	public void print(){
+	protected void printProduto(){
 		System.out.println("Nome: "+nome);
 		System.out.println("Preco: "+preco);
 		System.out.println("Marca: "+marca);
 		System.out.println("Descricacao: "+descricao);
 		System.out.println("Data de fabricacao: "+dataDeFabricacao);
+	}
+	
+	public void print(){
+		printProduto();
 	}
 }

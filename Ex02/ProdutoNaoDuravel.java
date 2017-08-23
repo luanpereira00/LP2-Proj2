@@ -16,6 +16,7 @@ public class ProdutoNaoDuravel extends Produto{
 	public void setDataDeValidade(String dataDeValidade){
 		this.dataDeValidade=dataDeValidade;
 	}
+	
 	public void setGenero(String genero){
 		this.genero=genero;
 	}
@@ -23,17 +24,18 @@ public class ProdutoNaoDuravel extends Produto{
 	public String getDataDeValidade(){
 		return dataDeValidade;
 	}
+	
 	public String setGenero(){
 		return genero;
 	}
-	public void print(){
-		System.out.println("Nome: "+nome);
-		System.out.println("Preco: "+preco);
-		System.out.println("Marca: "+marca);
-		System.out.println("Descricacao: "+descricao);
-		System.out.println("Data de fabricacao: "+dataDeFabricacao);
+	
+	protected void printProdutoNaoDuravel(){
+		printProduto();
 		System.out.println("Data de validade: "+dataDeValidade);
 		System.out.println("Genero: "+genero);
-		
+	}
+	
+	public void print(){
+		printProdutoNaoDuravel();
 	}
 }
