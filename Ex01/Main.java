@@ -1,3 +1,9 @@
+/**
+ * Classe que define os metodo main da questao 1.
+ * 
+ * @author Luan Pereira
+ * @version 24/08/2017
+ */
 public class Main{
 	public static void main(String[] args){
 		System.out.println();

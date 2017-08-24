@@ -1,3 +1,9 @@
+/**
+ * Classe que define os metodos e atributos de um produto
+ * 
+ * @author Luan Pereira
+ * @version 24/08/2017
+ */
 public class Produto{
 	protected String nome;
 	protected double preco;
@@ -5,6 +11,9 @@ public class Produto{
 	protected String descricao;
 	protected String dataDeFabricacao;
 	
+	/**
+	* Construtor padrao
+	*/
 	public Produto(){
 		nome="";
 		preco=0;
@@ -13,6 +22,9 @@ public class Produto{
 		dataDeFabricacao="1/1/1900";
 	}
 	
+	/**
+	* Construtor parametrizado
+	*/
 	public Produto(String nome, double preco, String marca, String descricao, String dataDeFabricacao){
 		this.nome=nome;
 		this.preco=preco;
@@ -21,7 +33,9 @@ public class Produto{
 		this.dataDeFabricacao=dataDeFabricacao;
 	}
 	
-	
+	/**
+	* Metodos getters e setters
+	*/
 	public String getNome(){
 		return nome;
 	}
@@ -54,6 +68,9 @@ public class Produto{
 		this.dataDeFabricacao=dataDeFabricacao;
 	}
 	
+	/**
+	* Metodos de impressao dos dados da classe 
+	*/
 	protected void printProduto(){
 		System.out.println("Nome: "+nome);
 		System.out.println("Preco: "+preco);
